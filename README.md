@@ -24,3 +24,11 @@ Process screen seperately and change to grayscale and do edge detection with Can
 Pass processed image back in  
 You can change thresholds in edge detection to get more or less detail.  
 For now can see enough, edges, people etc.
+
+## 3 Add key functionality
+Can use [keyboard](https://github.com/boppreh/keyboard) to send key scan codes
+* pip install keyboard  
+  
+Scan Codes found [here](http://www.gamespp.com/directx/directInputKeyboardScanCodes.html)  
+Using sleep for now to press 1 key howevert this is affecting opencv
+too, making it slow

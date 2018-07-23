@@ -1,5 +1,11 @@
 # Use Python to play GTA 5
 
+## Outline of Project
+Use Python to read the game screen and be able to self drive along the roads.  
+We will use OpenCv along with numpy, PIL and neural networks for machine learning  
+then into Tensor Flow to help detect objects around the vehicle.
+By the end, hope to have a self driving car on the streets of GTA 5.
+
 ## 1. Grab screen and show it
 Some necessary items:  
 * pip install numpy  

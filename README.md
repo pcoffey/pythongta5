@@ -1,6 +1,6 @@
 #Use Python to play GTA 5
 
-###1. Grab screen and show it
+##1. Grab screen and show it
 Some necessary items:  
 * pip install numpy  
 * pip install matlablib  
@@ -32,3 +32,11 @@ Can use [keyboard](https://github.com/boppreh/keyboard) to send key scan codes
 Scan Codes found [here](http://www.gamespp.com/directx/directInputKeyboardScanCodes.html)  
 Using sleep for now to press 1 key howevert this is affecting opencv
 too, making it slow
+
+## 4 Region of interest (ROI)
+Add in vertices in the image processing to create a region of interest.  
+Use this as a mask to find the data or road markings in the area we expect  
+and not for example looking in the sky for the road.  
+We expect to find the road in the area of the screen.  
+The top will be sky and the bottom will be part of the vehicle you  
+are driving.

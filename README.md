@@ -1,6 +1,6 @@
-#Use Python to play GTA 5
+# Use Python to play GTA 5
 
-##1. Grab screen and show it
+## 1. Grab screen and show it
 Some necessary items:  
 * pip install numpy  
 * pip install matlablib  

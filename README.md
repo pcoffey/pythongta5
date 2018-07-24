@@ -3,7 +3,7 @@
 ## Outline of Project
 Use Python to read the game screen and be able to self drive along the roads.  
 We will use OpenCv along with numpy, PIL and neural networks for machine learning  
-then into Tensor Flow to help detect objects around the vehicle.
+then into Tensor Flow to help detect objects around the vehicle.  
 By the end, hope to have a self driving car on the streets of GTA 5.
 
 ## 1. Grab screen and show it
@@ -45,4 +45,10 @@ Use this as a mask to find the data or road markings in the area we expect
 and not for example looking in the sky for the road.  
 We expect to find the road in the area of the screen.  
 The top will be sky and the bottom will be part of the vehicle you  
-are driving.
+are driving.  
+
+## 5 Draw some lines
+
+Using [HoughLineP](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html) 
+along with [GaussianBlur](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_filtering/py_filtering.html) to smooth the image we can  
+draw lines on the image 

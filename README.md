@@ -52,3 +52,10 @@ are driving.
 Using [HoughLineP](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html) 
 along with [GaussianBlur](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_filtering/py_filtering.html) to smooth the image we can  
 draw lines on the image 
+
+## 6 Find lanes
+Look for lines with rise. This is to eliminate the horizontal lines  
+since they are probably not wanted (at least for now).  
+Need to what actual lane and what is not.
+WHat set a frame/two lines that are attached to the user/car then form there detect if they   
+moving along the lanes we are detecting.

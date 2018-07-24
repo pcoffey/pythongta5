@@ -29,13 +29,13 @@ def process_img(original_image):
     processed_img = cv2.cvtColor(original_image, cv2.COLOR_BGR2GRAY)
     # edge detection
     processed_img = cv2.Canny(processed_img, threshold1=100, threshold2=300)
-    # Gaussian Blur to smooth out line, easier detection (This doubled time taken)
-    processed_img = cv2.GaussianBlur(processed_img, (5, 5), 0)
+    # Gaussian Blur to smooth out line, easier detection
+    processed_img = cv2.GaussianBlur(processed_img, (3, 3), 0)
     # Shape the mask
     vertices = np.array([[10,500], [10,300], [300, 200], [500,200], [800,500]], np.int32)
     processed_img = roi(processed_img, [vertices])
     # Get lines using HoughLinesP and then draw on image
-    lines = cv2.HoughLinesP(processed_img, 1, np.pi / 180, 180, 20, 15)
+    lines = cv2.HoughLinesP(processed_img, 1, np.pi / 180, 180, np.array([]), 10, 5)
     draw_lines(processed_img, lines)
     return processed_img
 

@@ -58,4 +58,5 @@ Look for lines with rise. This is to eliminate the horizontal lines
 since they are probably not wanted (at least for now).  
 Need to what actual lane and what is not.
 WHat set a frame/two lines that are attached to the user/car then form there detect if they   
-moving along the lanes we are detecting.
+moving along the lanes we are detecting.  
+(going to need better computer, this one is not paying high enough graphics)

@@ -60,3 +60,9 @@ Need to what actual lane and what is not.
 WHat set a frame/two lines that are attached to the user/car then form there detect if they   
 moving along the lanes we are detecting.  
 (going to need better computer, this one is not paying high enough graphics)
+
+## 7 Use the lanes to try steer
+Use the lanes to try steer.  
+If too close to one side try to turn to the other side.  
+Script can now go straight, right and left.
+We have a shitty driver for now
